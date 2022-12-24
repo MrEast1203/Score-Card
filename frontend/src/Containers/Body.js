@@ -127,6 +127,9 @@ const Body = () => {
   };
 
   const handleAdd = async () => {
+    // console.log('name', name);
+    // console.log('subject', subject);
+    // console.log('score', score);
     const {
       data: { message, card },
     } = await axios.post('/card', {
