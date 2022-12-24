@@ -11,7 +11,7 @@ router.delete('/cards', async (req, res) => {
   res.json({ message: 'Database cleared' });
 });
 router.post('/card', async (req, res) => {
-  //console.log(req.body);
+  console.log('post card', req.body);
   let card = await saveScoreCard(req.body);
   res.json({ message: card, card: true });
 });
