@@ -1,0 +1,23 @@
+{
+  "name": "hw6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@fontsource/roboto": "^4.5.8",
+    "@mui/material": "^5.10.12",
+    "@mui/styled-engine-sc": "^5.10.6",
+    "create-react-app": "^5.0.1",
+    "styled-components": "^5.3.6"
+  },
+  "scripts": {
+    "install:all": "cd frontend && yarn install && cd ../backend && yarn install",
+    "start": "cd frontend && yarn start",
+    "server": "cd backend && yarn server",
+    "install:prod": "cd frontend && yarn install --freeze-lockfile && cd ../backend && yarn install --freeze-lockfile",
+    "build": "cd frontend && yarn build",
+    "deploy": "cd backend && yarn deploy"
+  }
+}
